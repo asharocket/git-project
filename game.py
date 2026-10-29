@@ -1,13 +1,13 @@
 import random
 
-secret_number = random.ranndint(1,10)
+secret_number = random.randint(1,10)
 
 while True:
     guess = int(input("Guess a number: "))
 
-    if guess < number:
+    if guess < secret_number:
         print("Too small!")
-    elif guess > number:
+    elif guess > secret_number:
         print("Too large!")
     else: 
         print("just right!")
